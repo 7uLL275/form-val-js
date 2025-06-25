@@ -19,7 +19,7 @@ form.addEventListener("submit", (event) => {
 
             
     if (name === '' || email === '') {
-        error.textContent = "Nama dan email harus diisi!";
+        error.textContent = "Kolom nama dan email harus diisi!";
         event.preventDefault();
         return;
     }
@@ -31,7 +31,7 @@ form.addEventListener("submit", (event) => {
     }
 
     if (name.lenght < 3) {
-        error.textContent = "Nama harus lebih dari 2 karakter!";
+        error.textContent = "Harus lebih dari 2 karakter!";
         event.preventDefault();
         return;
     }
@@ -39,7 +39,7 @@ form.addEventListener("submit", (event) => {
     success.textContent = "Form berhasil dikirim!";
     alert(`Form submitted with Name: ${name} and Email: ${email}`); 
 
-    event.preventDefault(); // Mencegah pengiriman form untuk demonstrasi
+    event.preventDefault(); 
     console.log("Form terkirim")
     console.log("Nama:", name);
     console.log("Email:", email);
